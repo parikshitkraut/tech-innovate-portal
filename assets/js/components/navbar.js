@@ -92,7 +92,7 @@ export function renderNavbar(activePage = 'home') {
         ${navItems.map(item => `
           <a href="#${item.id}" 
              data-nav="${item.id}"
-             class="mobile-nav-link block px-4 py-2.5 rounded-lg text-base font-medium ${
+             class="mobile-nav-link block px-4 py-3 rounded-xl text-base font-medium ${
                activePage === item.id 
                  ? 'text-cyan-400 bg-white/[0.08] font-semibold' 
                  : 'text-slate-300 hover:text-white hover:bg-white/[0.05]'
@@ -100,9 +100,20 @@ export function renderNavbar(activePage = 'home') {
             ${item.label}
           </a>
         `).join('')}
-        <div class="pt-4 border-t border-white/10">
+
+        <!-- Mobile SFX & Telemetry Bar -->
+        <div class="flex items-center justify-between px-2 pt-2 border-t border-white/10">
+          <button onclick="window.toggleCyberAudio()" class="px-3 py-2 rounded-xl bg-white/[0.05] border border-white/10 text-xs font-mono text-cyan-400 flex items-center gap-2">
+            <span>Toggle Cyber Sound FX</span>
+          </button>
+          <span class="text-[10px] font-mono text-slate-400 flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span> System Stable
+          </span>
+        </div>
+
+        <div class="pt-3 border-t border-white/10">
           <button onclick="window.openEnquiryModal('General Admission / Technology Consultation')" 
-                  class="apple-btn-primary w-full justify-center text-sm py-3">
+                  class="apple-btn-primary w-full justify-center text-sm py-3.5 shadow-lg shadow-white/10">
             <span>Get Started</span>
             ${icons.arrowRight}
           </button>

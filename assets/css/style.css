@@ -709,6 +709,73 @@ code, pre, .font-mono {
 }
 
 /* ===================================================================
+   RESPONSIVE OPTIMIZATION: PHONES, TABLETS & LAPTOPS
+   Touch targets, adaptive badges, safe-area-insets, fluid viewports
+   =================================================================== */
+@media (max-width: 640px) {
+  .floating-badge {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.72rem;
+  }
+  .badge-top-left {
+    top: 5px;
+    left: -2px;
+  }
+  .badge-top-right {
+    top: 15px;
+    right: -2px;
+  }
+  .badge-bottom-left {
+    bottom: 10px;
+    left: -2px;
+  }
+  .badge-bottom-right {
+    bottom: 5px;
+    right: -2px;
+  }
+  .tech-cube-wrapper {
+    width: 260px;
+    height: 260px;
+  }
+  .tech-ring-1 {
+    width: 260px;
+    height: 260px;
+  }
+  .tech-ring-2 {
+    width: 200px;
+    height: 200px;
+  }
+  .tech-core {
+    width: 110px;
+    height: 110px;
+  }
+  .dynamic-island {
+    max-width: 94vw;
+    font-size: 0.75rem;
+    padding: 0.45rem 0.9rem;
+    text-align: center;
+  }
+  .apple-btn-primary, .apple-btn-secondary, .btn-primary, .btn-secondary {
+    min-height: 44px;
+    touch-action: manipulation;
+  }
+  .bento-card {
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+  }
+  .code-terminal {
+    font-size: 0.75rem;
+  }
+}
+
+/* Laptops (1024px to 1440px) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .bento-card {
+    padding: 2rem;
+  }
+}
+
+/* ===================================================================
    ACCESSIBILITY & REDUCED MOTION
    =================================================================== */
 @media (prefers-reduced-motion: reduce) {

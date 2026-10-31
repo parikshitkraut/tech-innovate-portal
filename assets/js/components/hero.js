@@ -7,13 +7,13 @@ export function renderHero() {
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         <!-- Apple-Style Dynamic Island Pill Announcement -->
-        <div class="flex justify-center mb-8">
+        <div class="flex justify-center mb-8 px-2">
           <div class="dynamic-island cursor-pointer group" onclick="window.openEnquiryModal('General Admission / Technology Consultation')">
-            <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
-            <span class="text-xs sm:text-sm font-semibold text-white tracking-tight">
+            <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping shrink-0"></span>
+            <span class="text-[11px] sm:text-sm font-semibold text-white tracking-tight text-center">
               Next-Gen IT & AI Education &bull; Guided by Dr. Pravin Kale & Dr. Sandeep Kale
             </span>
-            <span class="text-cyan-400 group-hover:translate-x-1 transition-transform text-xs">
+            <span class="text-cyan-400 group-hover:translate-x-1 transition-transform text-xs shrink-0">
               ${icons.arrowRight}
             </span>
           </div>
@@ -21,7 +21,7 @@ export function renderHero() {
 
         <!-- Main Apple-Style Cinematic Headline -->
         <div class="text-center max-w-4xl mx-auto space-y-6">
-          <h1 class="apple-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tighter leading-[1.04]">
+          <h1 class="apple-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tighter leading-[1.04]">
             Build Your Future. <br />
             <span class="iridescent-text">Learn. Innovate. Grow.</span>
           </h1>

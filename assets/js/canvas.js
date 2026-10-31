@@ -37,6 +37,19 @@ export class NeuralCanvas {
       this.mouse.y = -1000;
     });
 
+    // Mobile touch tracking (touch-optimized for phones)
+    window.addEventListener('touchmove', (e) => {
+      if (e.touches && e.touches[0]) {
+        this.mouse.x = e.touches[0].clientX;
+        this.mouse.y = e.touches[0].clientY;
+      }
+    }, { passive: true });
+
+    window.addEventListener('touchend', () => {
+      this.mouse.x = -1000;
+      this.mouse.y = -1000;
+    });
+
     this.createParticles();
     this.animate();
   }
@@ -53,8 +66,11 @@ export class NeuralCanvas {
 
   createParticles() {
     this.particles = [];
-    // Density calculation based on screen size
-    const count = Math.min(Math.floor((this.width * this.height) / 16000), 95);
+    const isMobile = this.width < 768;
+    // Optimized particle count: 32 for phones (battery & 60FPS friendly), up to 90 for laptops
+    const count = isMobile 
+      ? Math.min(Math.floor((this.width * this.height) / 22000), 32)
+      : Math.min(Math.floor((this.width * this.height) / 16000), 90);
 
     for (let i = 0; i < count; i++) {
       this.particles.push({
