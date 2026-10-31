@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  
+  <!-- Primary Meta Tags -->
+  <title>NexusTech Innovations | IT Services & Technology Training</title>
+  <meta name="title" content="NexusTech Innovations | IT Services & Technology Training" />
+  <meta name="description" content="Empowering students, professionals and businesses with next-generation skills in Web Development, Artificial Intelligence, Python, and modern software engineering. Founded by Dr. Pravin Kale and Dr. Sandeep Kale." />
+  <meta name="theme-color" content="#080B18" />
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://nexustech-innovations.com/" />
+  <meta property="og:title" content="NexusTech Innovations | IT Services & Technology Training" />
+  <meta property="og:description" content="Master Web Development, Full Stack, Python, Machine Learning, and Generative AI with hands-on practical engineering." />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="NexusTech Innovations | IT Services & Technology Training" />
+  <meta property="twitter:description" content="Master Web Development, Full Stack, Python, Machine Learning, and Generative AI with hands-on practical engineering." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#080B18',
+              navyCard: '#0D1226',
+              blue: '#386BFF',
+              purple: '#8B5CF6',
+              cyan: '#00D4FF',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            heading: ['"Space Grotesk"', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Design System Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-[#080B18] text-white selection:bg-cyan-500 selection:text-black">
+
+  <!-- Interactive 60FPS Neural Constellation Canvas -->
+  <canvas id="neuralCanvas" aria-hidden="true"></canvas>
+
+  <!-- Ambient Background Lighting Orbs & Grid -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="ambient-grid"></div>
+    <div class="ambient-orb-1"></div>
+    <div class="ambient-orb-2"></div>
+    <div class="ambient-orb-3"></div>
+  </div>
+
+  <!-- Main Application Container -->
+  <div id="app" class="relative z-10">
+    <!-- Rendered dynamically by assets/js/app.js -->
+  </div>
+
+  <!-- Core JavaScript Module -->
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>

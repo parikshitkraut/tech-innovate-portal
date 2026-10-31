@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="gradPravin" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#386BFF" />
+      <stop offset="50%" stop-color="#1E293B" />
+      <stop offset="100%" stop-color="#080B18" />
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D4FF" />
+      <stop offset="100%" stop-color="#8B5CF6" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#gradPravin)" rx="32" />
+  <circle cx="200" cy="150" r="65" fill="#1E2950" stroke="url(#borderGrad)" stroke-width="4" />
+  <path d="M90 340 C 90 240, 310 240, 310 340 Z" fill="#1E2950" stroke="url(#borderGrad)" stroke-width="4" />
+  <text x="200" y="165" font-family="'Space Grotesk', sans-serif" font-size="48" font-weight="bold" fill="#00D4FF" text-anchor="middle">PK</text>
+  <text x="200" y="370" font-family="'JetBrains Mono', monospace" font-size="16" fill="#94A3B8" text-anchor="middle">DR. PRAVIN KALE</text>
+</svg>
