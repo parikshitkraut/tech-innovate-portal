@@ -81,7 +81,7 @@ export function renderEnquiryModal() {
           </div>
 
           <div class="pt-2">
-            <button type="submit" id="modalSubmitBtn" class="btn-primary w-full justify-center text-sm py-3">
+            <button type="submit" id="modalSubmitBtn" class="apple-btn-primary w-full justify-center text-sm py-3.5 shadow-xl shadow-white/10">
               <span>Submit Enquiry</span>
               ${icons.send}
             </button>
@@ -99,15 +99,15 @@ export function renderEnquiryModal() {
           <div class="w-16 h-16 mx-auto rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center justify-center">
             ${icons.checkCircle}
           </div>
-          <h4 class="text-2xl font-bold text-white">Enquiry Received!</h4>
+          <h4 class="apple-display text-3xl font-bold text-white">Enquiry Received!</h4>
           <p class="text-sm text-slate-300 max-w-sm mx-auto" id="modalSuccessMessage">
             Thank you for reaching out. Our academic counselor will contact you within 24 business hours.
           </p>
           <div class="pt-4 flex justify-center gap-3">
-            <button onclick="window.closeEnquiryModal()" class="btn-secondary text-xs py-2 px-6">
+            <button onclick="window.closeEnquiryModal()" class="apple-btn-secondary text-xs py-2.5 px-6">
               Close
             </button>
-            <a id="modalWhatsAppLink" href="https://wa.me/${siteConfig.contact.whatsapp.replace(/[^0-9]/g, '')}" target="_blank" rel="noopener noreferrer" class="btn-primary text-xs py-2 px-6">
+            <a id="modalWhatsAppLink" href="https://wa.me/${siteConfig.contact.whatsapp.replace(/[^0-9]/g, '')}" target="_blank" rel="noopener noreferrer" class="apple-btn-primary text-xs py-2.5 px-6">
               <span>Chat on WhatsApp</span>
               ${icons.whatsapp}
             </a>

@@ -5,37 +5,37 @@ export function renderCoursesSection(isFullPage = false) {
   const displayCourses = siteConfig.courses;
 
   return `
-    <section class="${isFullPage ? 'py-12' : 'py-24'} relative z-10" id="courses">
+    <section class="${isFullPage ? 'py-12' : 'py-28'} relative z-10" id="courses">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="text-center max-w-3xl mx-auto mb-12">
-          <div class="badge-pill mb-4">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.06] border border-white/10 text-slate-300 text-xs font-mono font-semibold tracking-wider uppercase mb-4">
             <span>Specialized Training Programs</span>
           </div>
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4">
-            Master Cutting-Edge <br />
-            <span class="gradient-text">Technologies & AI</span>
+          <h2 class="apple-display text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tighter mb-4">
+            Explore The Lineup. <br />
+            <span class="iridescent-text">Choose Your Path.</span>
           </h2>
-          <p class="text-slate-300 text-base sm:text-lg">
-            Structured hands-on curriculums engineered for college students, career switchers, and working tech professionals.
+          <p class="text-slate-300 text-base sm:text-xl font-normal tracking-tight">
+            Comprehensive practical curriculums engineered for college students, beginners, and tech professionals.
           </p>
         </div>
 
-        <!-- Filter Tabs -->
-        <div class="flex items-center justify-center gap-2 flex-wrap mb-12" id="courseFilterContainer">
-          <button class="course-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 shadow-sm" data-filter="all">
+        <!-- Apple-Style Segmented Pill Filter -->
+        <div class="flex items-center justify-center gap-2 flex-wrap mb-16" id="courseFilterContainer">
+          <button class="course-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-white text-black shadow-lg shadow-white/20" data-filter="all">
             All Programs (6)
           </button>
-          <button class="course-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 bg-white/5 text-slate-300 border border-white/10 hover:bg-white/10 hover:text-white" data-filter="Web Development">
+          <button class="course-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-white/[0.06] text-slate-300 border border-white/10 hover:bg-white/15 hover:text-white" data-filter="Web Development">
             Web Development
           </button>
-          <button class="course-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 bg-white/5 text-slate-300 border border-white/10 hover:bg-white/10 hover:text-white" data-filter="Full Stack">
+          <button class="course-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-white/[0.06] text-slate-300 border border-white/10 hover:bg-white/15 hover:text-white" data-filter="Full Stack">
             Full Stack
           </button>
-          <button class="course-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 bg-white/5 text-slate-300 border border-white/10 hover:bg-white/10 hover:text-white" data-filter="AI & ML">
+          <button class="course-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-white/[0.06] text-slate-300 border border-white/10 hover:bg-white/15 hover:text-white" data-filter="AI & ML">
             AI & Machine Learning
           </button>
-          <button class="course-filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 bg-white/5 text-slate-300 border border-white/10 hover:bg-white/10 hover:text-white" data-filter="Programming">
+          <button class="course-filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 bg-white/[0.06] text-slate-300 border border-white/10 hover:bg-white/15 hover:text-white" data-filter="Programming">
             Python & Logic
           </button>
         </div>
@@ -46,9 +46,9 @@ export function renderCoursesSection(isFullPage = false) {
         </div>
 
         ${!isFullPage ? `
-          <div class="text-center mt-14">
-            <a href="#courses" data-nav="courses" class="btn-secondary py-3 px-8 text-sm">
-              <span>View Full Syllabus & Program Details</span>
+          <div class="text-center mt-16">
+            <a href="#courses" data-nav="courses" class="apple-btn-secondary text-sm py-3.5 px-8">
+              <span>Compare All Syllabi & Deep Details</span>
               ${icons.arrowRight}
             </a>
           </div>
@@ -61,38 +61,38 @@ export function renderCoursesSection(isFullPage = false) {
 
 export function renderCourseCard(course) {
   return `
-    <div class="glass-panel p-7 flex flex-col justify-between group course-item tilt-card relative overflow-hidden" data-category="${course.category}">
+    <div class="bento-card p-8 flex flex-col justify-between group course-item tilt-card relative overflow-hidden" data-category="${course.category}">
       <div class="hologram-glare"></div>
       
       <div class="relative z-10">
-        <!-- Top Row: Icon & Badge -->
-        <div class="flex items-center justify-between mb-6">
-          <div class="w-14 h-14 rounded-2xl bg-gradient-to-br ${course.color} bg-opacity-20 p-[1px] shadow-lg group-hover:scale-105 transition-transform">
+        <!-- Top Row: Icon & Apple Badge -->
+        <div class="flex items-center justify-between mb-8">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-br ${course.color} p-[1px] shadow-xl group-hover:scale-105 transition-transform">
             <div class="w-full h-full bg-[#0E1428] rounded-[15px] flex items-center justify-center text-cyan-400">
-              ${getIcon(course.icon, "w-7 h-7")}
+              ${getIcon(course.icon, "w-8 h-8")}
             </div>
           </div>
-          <span class="text-[11px] font-mono uppercase tracking-wider px-3 py-1 rounded-full bg-white/5 border border-white/10 text-slate-300">
+          <span class="text-[11px] font-mono uppercase tracking-wider px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-slate-300 font-medium">
             ${course.badge}
           </span>
         </div>
 
         <!-- Course Title -->
-        <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
+        <h3 class="apple-display text-2xl sm:text-3xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
           ${course.name}
         </h3>
 
         <!-- Description -->
-        <p class="text-slate-300 text-sm leading-relaxed mb-6">
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
           ${course.description}
         </p>
 
-        <!-- Highlights / Key Topics -->
+        <!-- Highlights / Modules -->
         <div class="space-y-2 mb-6">
-          <div class="text-xs font-mono uppercase tracking-wider text-slate-400">Core Modules:</div>
-          <ul class="space-y-1.5 text-xs text-slate-300">
+          <div class="text-xs font-mono uppercase tracking-wider text-slate-400">Key Modules:</div>
+          <ul class="space-y-2 text-xs text-slate-300">
             ${course.highlights.slice(0, 3).map(h => `
-              <li class="flex items-start gap-2">
+              <li class="flex items-start gap-2.5">
                 <span class="text-cyan-400 mt-0.5 shrink-0">${icons.check}</span>
                 <span>${h}</span>
               </li>
@@ -100,12 +100,12 @@ export function renderCourseCard(course) {
           </ul>
         </div>
 
-        <!-- Key Skills Covered -->
-        <div class="mb-6">
-          <div class="text-xs font-mono uppercase tracking-wider text-slate-400 mb-2">Key Skills:</div>
+        <!-- Key Skills -->
+        <div class="mb-8">
+          <div class="text-xs font-mono uppercase tracking-wider text-slate-400 mb-2.5">Core Competencies:</div>
           <div class="flex flex-wrap gap-1.5">
             ${course.skills.map(skill => `
-              <span class="text-[11px] font-mono px-2.5 py-1 rounded-md bg-blue-500/10 border border-blue-500/20 text-cyan-300">
+              <span class="text-xs font-mono px-3 py-1 rounded-lg bg-blue-500/10 border border-blue-500/20 text-cyan-300">
                 ${skill}
               </span>
             `).join('')}
@@ -113,13 +113,13 @@ export function renderCourseCard(course) {
         </div>
       </div>
 
-      <!-- Footer & Action -->
-      <div class="pt-6 border-t border-white/10 flex items-center justify-between">
-        <span class="text-xs text-slate-400 font-medium">
-          Practical Projects Track
+      <!-- Action Footer -->
+      <div class="pt-6 border-t border-white/10 flex items-center justify-between relative z-10">
+        <span class="text-xs text-slate-400 font-medium font-mono">
+          Project-Based
         </span>
         <button onclick="window.openEnquiryModal('Course: ${course.name}')" 
-                class="btn-primary text-xs py-2 px-4 shadow-sm group-hover:shadow-blue-500/30">
+                class="apple-btn-primary text-xs py-2.5 px-5 shadow-lg shadow-white/10">
           <span>Explore Course</span>
           ${icons.arrowRight}
         </button>

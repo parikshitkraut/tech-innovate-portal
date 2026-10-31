@@ -583,6 +583,132 @@ code, pre, .font-mono {
 }
 
 /* ===================================================================
+   APPLE-INSPIRED DESIGN SYSTEM & CINEMATIC BENTO GRIDS
+   Apple.com Flagship Presentation: Titanium Sheen, Bento Tiles, SF Pro Depth
+   =================================================================== */
+
+.apple-display {
+  font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+  letter-spacing: -0.035em;
+  line-height: 1.08;
+}
+
+.titanium-text {
+  background: linear-gradient(180deg, #FFFFFF 20%, #E2E8F0 60%, #94A3B8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.iridescent-text {
+  background: linear-gradient(135deg, #00D4FF 0%, #386BFF 35%, #8B5CF6 70%, #F472B6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Apple-style Frosted Glass Bento Tiles */
+.bento-card {
+  background: rgba(13, 18, 38, 0.72);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1.75rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.bento-card:hover {
+  background: rgba(20, 27, 54, 0.85);
+  border-color: rgba(0, 212, 255, 0.4);
+  transform: translateY(-6px) scale(1.008);
+  box-shadow: 0 35px 70px -15px rgba(56, 107, 255, 0.35), 0 0 30px rgba(0, 212, 255, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* Apple Dynamic Island Floating Pill */
+.dynamic-island {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 9999px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(56, 107, 255, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dynamic-island:hover {
+  transform: scale(1.04);
+  border-color: var(--neon-cyan);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 212, 255, 0.4);
+}
+
+/* Apple Pill Buttons */
+.apple-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  background: #FFFFFF;
+  color: #080B18;
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+  border-radius: 9999px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 4px 25px rgba(255, 255, 255, 0.35), 0 0 20px rgba(0, 212, 255, 0.2);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.apple-btn-primary:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 35px rgba(255, 255, 255, 0.6), 0 0 30px rgba(0, 212, 255, 0.5);
+  background: #F8FAFC;
+}
+
+.apple-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 2rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(16px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.apple-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: scale(1.03);
+  color: var(--neon-cyan);
+}
+
+/* Apple Spec Matrix Grid */
+.spec-number {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+
+/* ===================================================================
    ACCESSIBILITY & REDUCED MOTION
    =================================================================== */
 @media (prefers-reduced-motion: reduce) {

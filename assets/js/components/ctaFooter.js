@@ -3,37 +3,38 @@ import { icons } from '../icons.js';
 
 export function renderCTA() {
   return `
-    <section class="py-20 relative z-10 overflow-hidden" id="cta">
+    <section class="py-28 relative z-10 overflow-hidden" id="cta">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        <div class="relative rounded-3xl overflow-hidden p-8 sm:p-14 lg:p-16 text-center border border-white/15 bg-gradient-to-r from-blue-900/40 via-indigo-950/60 to-purple-900/40 backdrop-blur-xl shadow-2xl shadow-blue-500/10">
+        <div class="relative rounded-[2.5rem] overflow-hidden p-10 sm:p-16 lg:p-20 text-center border border-white/20 bg-gradient-to-r from-blue-900/35 via-indigo-950/50 to-purple-900/35 backdrop-blur-2xl shadow-2xl shadow-blue-500/10 bento-card">
+          <div class="hologram-glare"></div>
           
           <!-- Background Ambient Glows -->
           <div class="absolute -top-24 -left-24 w-80 h-80 bg-blue-500/30 rounded-full blur-3xl pointer-events-none"></div>
-          <div class="absolute -bottom-24 -right-24 w-80 h-80 bg-cyan-400/20 rounded-full blur-3xl pointer-events-none"></div>
+          <div class="absolute -bottom-24 -right-24 w-80 h-80 bg-cyan-400/25 rounded-full blur-3xl pointer-events-none"></div>
 
           <div class="relative z-10 max-w-3xl mx-auto space-y-6">
             
-            <div class="badge-pill mx-auto">
-              <span>Shape Your Future Today</span>
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/[0.06] border border-white/10 text-slate-300 text-xs font-mono font-semibold tracking-wider uppercase mb-2">
+              <span>Ready For Launch</span>
             </div>
 
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-tight">
+            <h2 class="apple-display text-4xl sm:text-5xl lg:text-6xl font-black text-white tracking-tighter leading-tight">
               Ready to Upgrade Your Skills and <br class="hidden sm:inline" />
-              <span class="gradient-text">Shape Your Future?</span>
+              <span class="iridescent-text">Shape Your Future?</span>
             </h2>
 
-            <p class="text-slate-300 text-base sm:text-lg max-w-xl mx-auto">
-              Start your technology journey with us today. Gain industry-grade technical mastery in Web Development, Artificial Intelligence, and modern software engineering.
+            <p class="text-slate-300 text-base sm:text-xl max-w-xl mx-auto tracking-tight leading-relaxed">
+              Start your technology journey with us today. Gain industry-grade mastery in Web Development, Artificial Intelligence, and modern software engineering.
             </p>
 
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
               <button onclick="window.openEnquiryModal('Program Admission Enquiry')" 
-                      class="btn-primary w-full sm:w-auto text-base py-3.5 px-8 shadow-xl shadow-blue-600/30">
+                      class="apple-btn-primary w-full sm:w-auto text-base py-4 px-10 shadow-2xl shadow-white/20">
                 <span>Join Our Programs</span>
                 ${icons.arrowRight}
               </button>
-              <a href="#contact" data-nav="contact" class="btn-secondary w-full sm:w-auto text-base py-3.5 px-8">
+              <a href="#contact" data-nav="contact" class="apple-btn-secondary w-full sm:w-auto text-base py-4 px-8">
                 <span>Contact Us</span>
                 ${icons.externalLink}
               </a>

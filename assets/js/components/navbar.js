@@ -71,7 +71,7 @@ export function renderNavbar(activePage = 'home') {
             </div>
 
             <button onclick="window.openEnquiryModal('General Admission / Technology Consultation')" 
-                    class="btn-primary text-sm py-2 px-5">
+                    class="apple-btn-primary text-xs py-2 px-5 shadow-lg shadow-white/10">
               <span>Get Started</span>
               ${icons.arrowRight}
             </button>
@@ -102,7 +102,7 @@ export function renderNavbar(activePage = 'home') {
         `).join('')}
         <div class="pt-4 border-t border-white/10">
           <button onclick="window.openEnquiryModal('General Admission / Technology Consultation')" 
-                  class="btn-primary w-full justify-center text-sm py-3">
+                  class="apple-btn-primary w-full justify-center text-sm py-3">
             <span>Get Started</span>
             ${icons.arrowRight}
           </button>
