@@ -129,7 +129,7 @@ export function renderHero() {
                         <span class="terminal-dot bg-amber-500/80"></span>
                         <span class="terminal-dot bg-emerald-500/80"></span>
                       </div>
-                      <span class="text-xs font-mono text-slate-300 pl-2">nexus-interactive-kernel.sh</span>
+                      <span class="text-xs font-mono text-slate-300 pl-2">aitech-kernel.sh</span>
                     </div>
                     <div class="text-[10px] font-mono text-cyan-400 flex items-center gap-1.5">
                       <span class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-ping"></span>
@@ -153,7 +153,7 @@ export function renderHero() {
 
                   <!-- Active Command Display -->
                   <div class="px-4 py-2 bg-[#060913] border-b border-white/5 font-mono text-xs text-white" id="terminalActiveCommand">
-                    <span class="text-cyan-400">$</span> python -m nexustech.ai --inference --model llm-v4-instruct
+                    <span class="text-cyan-400">$</span> python -m aitech.core --inference --model llm-v4-instruct
                   </div>
 
                   <!-- Output Console -->

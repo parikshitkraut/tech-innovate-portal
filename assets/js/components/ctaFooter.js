@@ -63,7 +63,7 @@ export function renderFooter() {
             <a href="#home" data-nav="home" class="flex items-center gap-3">
               <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-500 to-cyan-400 p-[1px]">
                 <div class="w-full h-full bg-[#080B18] rounded-[11px] flex items-center justify-center text-white">
-                  <span class="font-bold text-lg font-mono bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">NT</span>
+                  <span class="font-bold text-lg font-mono bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">AI</span>
                 </div>
               </div>
               <span class="font-heading font-bold text-xl tracking-tight text-white">
@@ -72,7 +72,7 @@ export function renderFooter() {
             </a>
 
             <p class="text-slate-400 text-sm leading-relaxed max-w-sm">
-              Empowering students, professionals, and global organizations through cutting-edge technology education, full-stack software development, and modern artificial intelligence solutions.
+              ${siteConfig.tagline} — empowering students, professionals, and global organizations through cutting-edge technology education, full-stack software development, and modern artificial intelligence solutions.
             </p>
 
             <!-- Social Links -->

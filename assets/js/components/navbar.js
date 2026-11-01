@@ -20,15 +20,15 @@ export function renderNavbar(activePage = 'home') {
           <a href="#home" data-nav="home" class="flex items-center gap-3 group text-decoration-none">
             <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-500 to-cyan-400 p-[1px] shadow-lg shadow-blue-500/25 group-hover:shadow-blue-500/40 transition-all duration-300">
               <div class="w-full h-full bg-[#080B18] rounded-[11px] flex items-center justify-center text-white">
-                <span class="font-bold text-lg font-mono bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">NT</span>
+                <span class="font-bold text-lg font-mono bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">AI</span>
               </div>
             </div>
             <div class="flex flex-col">
               <span class="font-heading font-bold text-lg tracking-tight text-white group-hover:text-cyan-400 transition-colors">
                 ${siteConfig.companyName}
               </span>
-              <span class="text-[10px] tracking-wider font-mono uppercase text-slate-400">
-                IT & AI Academy
+              <span class="text-[9px] tracking-wider font-mono uppercase text-slate-400">
+                Brings Every Solution
               </span>
             </div>
           </a>

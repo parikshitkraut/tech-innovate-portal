@@ -11,7 +11,7 @@ import { sound } from './audio.js';
 
 export const terminalSnippets = {
   ai_inference: {
-    command: "python -m nexustech.ai --inference --model llm-v4-instruct",
+    command: "python -m aitech.core --inference --model llm-v4-instruct",
     output: [
       "[INFO] Loading Neural Weights: 70B Quantized [OK]",
       "[INFO] Initializing Vector Store Embeddings... [512-dim]",
@@ -30,7 +30,7 @@ export const terminalSnippets = {
       "Epoch 25/50: loss = 0.1842, accuracy = 94.7%",
       "Epoch 40/50: loss = 0.0619, accuracy = 98.6%",
       "Epoch 50/50: loss = 0.0211, accuracy = 99.4%",
-      "[CHECKPOINT] Model saved to weights/nexustech_ai_model.pt",
+      "[CHECKPOINT] Model saved to weights/aitech_ai_model.pt",
       "✓ Neural network convergence achieved."
     ]
   },

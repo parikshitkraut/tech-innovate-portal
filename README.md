@@ -1,6 +1,7 @@
-# NexusTech Innovations - IT Services & Technology Training Website
-### Premium, Futuristic, and Responsive Web Application
+# AI Tech - IT Services & Technology Training Website
+### Brings Every Solution Towards You
 *Founded by Dr. Pravin Kale & Co-Founded by Dr. Sandeep Kale*
+*Head Office: Leo Galaxy, Gokul Society, Nagpur, Maharashtra, India*
 
 ---
 

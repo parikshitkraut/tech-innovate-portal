@@ -8,30 +8,28 @@
 
 export const siteConfig = {
   // 1. BRANDING & COMPANY DETAILS
-  // Change "[COMPANY NAME]" below to your official registered company name
-  companyName: "NEXUSTECH INNOVATIONS",
-  companyShortName: "NexusTech",
-  companyLegalName: "[COMPANY NAME - EDITABLE]",
-  tagline: "Build Your Future in Technology. Learn. Innovate. Grow.",
-  subtitle: "Empowering students, professionals and businesses with next-generation skills in Web Development, Artificial Intelligence and emerging technologies.",
+  companyName: "AI Tech",
+  companyShortName: "AI Tech",
+  companyLegalName: "AI Tech Solutions",
+  tagline: "Brings Every Solution Towards You",
+  subtitle: "Brings every solution towards you — empowering students, professionals and businesses with next-generation skills in Web Development, Artificial Intelligence and emerging technologies.",
   foundedYear: "2024",
 
-  // 2. CONTACT INFORMATION PLACEHOLDERS
-  // Replace these placeholders with your actual verified contact details
+  // 2. CONTACT INFORMATION
   contact: {
-    email: "contact@companydomain.com",       // e.g., info@yourcompany.com
-    admissionsEmail: "admissions@companydomain.com",
-    phone: "+91 98765 43210",                  // e.g., +91 98765 43210
+    email: "contact@aitech.in",
+    admissionsEmail: "admissions@aitech.in",
+    phone: "+91 98765 43210",
     altPhone: "+91 91234 56789",
-    whatsapp: "+91 98765 43210",              // For instant WhatsApp chat
+    whatsapp: "+91 98765 43210",
     address: {
-      line1: "[Office Address Line 1 - Tech Park / Building]",
-      line2: "[Street, Landmark]",
-      city: "Pune / Mumbai",
+      line1: "Leo Galaxy",
+      line2: "Gokul Society",
+      city: "Nagpur",
       state: "Maharashtra",
       country: "India",
-      pincode: "[Pincode]",
-      mapUrl: "https://maps.google.com"
+      pincode: "440013",
+      mapUrl: "https://maps.google.com/?q=Leo+Galaxy+Gokul+Society+Nagpur"
     },
     workingHours: "Monday - Saturday: 9:00 AM - 7:00 PM (IST)",
     socials: {
