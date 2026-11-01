@@ -133,13 +133,16 @@ export function renderFooter() {
                 <span class="text-cyan-400 shrink-0">${icons.mail}</span>
                 <span class="font-mono">${siteConfig.contact.email}</span>
               </div>
-              <div class="flex items-center gap-2.5">
-                <span class="text-cyan-400 shrink-0">${icons.phone}</span>
-                <span class="font-mono">${siteConfig.contact.phone}</span>
+              <div class="flex items-start gap-2.5">
+                <span class="text-cyan-400 shrink-0 mt-0.5">${icons.phone}</span>
+                <div class="space-y-0.5">
+                  <a href="tel:9049473739" class="font-mono hover:text-cyan-400 block">${siteConfig.contact.phoneSandeep} <span class="text-[10px] text-slate-500">(Sandeep Sir)</span></a>
+                  <a href="tel:9607504226" class="font-mono hover:text-cyan-400 block">${siteConfig.contact.phonePravin} <span class="text-[10px] text-slate-500">(Pravin Sir)</span></a>
+                </div>
               </div>
               <div class="flex items-center gap-2.5">
                 <span class="text-emerald-400 shrink-0">${icons.whatsapp}</span>
-                <span class="font-mono">${siteConfig.contact.whatsapp}</span>
+                <a href="https://wa.me/919049473739" target="_blank" rel="noopener noreferrer" class="font-mono hover:text-emerald-400">${siteConfig.contact.whatsapp}</a>
               </div>
             </div>
           </div>

@@ -19,9 +19,12 @@ export const siteConfig = {
   contact: {
     email: "contact@aitech.in",
     admissionsEmail: "admissions@aitech.in",
-    phone: "+91 98765 43210",
-    altPhone: "+91 91234 56789",
-    whatsapp: "+91 98765 43210",
+    phone: "+91 90494 73739",                  // Dr. Sandeep Kale
+    phoneSandeep: "+91 90494 73739",           // Dr. Sandeep Kale
+    phonePravin: "+91 96075 04226",            // Dr. Pravin Kale
+    altPhone: "+91 96075 04226",
+    whatsapp: "+91 90494 73739",              // Instant WhatsApp chat
+    whatsappPravin: "+91 96075 04226",
     address: {
       line1: "Leo Galaxy",
       line2: "Gokul Society",
@@ -43,17 +46,16 @@ export const siteConfig = {
 
   // 3. LEADERSHIP & FOUNDERS
   // Verified founders: Dr. Pravin Kale and Dr. Sandeep Kale
-  // (No invented qualifications or degrees; clean editable placeholders provided)
   founders: [
     {
       id: "pravin-kale",
       name: "Dr. Pravin Kale",
       role: "Founder",
+      phone: "+91 96075 04226",
       tagline: "Visionary Leader in Technology Education & Enterprise Solutions",
-      // Place your photo inside assets/images/founder-pravin.jpg or use an external URL
       image: "assets/images/founder-pravin.svg",
       initials: "PK",
-      bio: "Dr. Pravin Kale is the Founder of the company, dedicated to transforming technology education and driving digital transformation. With a passion for practical, real-world skill-building and innovation, he leads the organization's strategic vision, academic rigor, and technology initiatives.",
+      bio: "Dr. Pravin Kale is the Founder of AI Tech, dedicated to transforming technology education and driving digital transformation. With a passion for practical, real-world skill-building and innovation, he leads the organization's strategic vision, academic rigor, and technology initiatives.",
       expertise: [
         "Strategic Leadership",
         "Technology Education",
@@ -63,18 +65,19 @@ export const siteConfig = {
       social: {
         linkedin: "#",
         twitter: "#",
-        email: "pravin.kale@companydomain.com"
+        email: "pravin.kale@aitech.in",
+        phone: "+91 96075 04226"
       }
     },
     {
       id: "sandeep-kale",
       name: "Dr. Sandeep Kale",
       role: "Co-Founder",
+      phone: "+91 90494 73739",
       tagline: "Innovator in AI Solutions & Professional Technical Skill Development",
-      // Place your photo inside assets/images/founder-sandeep.jpg or use an external URL
       image: "assets/images/founder-sandeep.svg",
       initials: "SK",
-      bio: "Dr. Sandeep Kale is the Co-Founder of the company, bringing forward-thinking leadership to IT training and software engineering solutions. He focuses on empowering students and working professionals with modern, industry-relevant competencies in artificial intelligence and modern web architectures.",
+      bio: "Dr. Sandeep Kale is the Co-Founder of AI Tech, bringing forward-thinking leadership to IT training and software engineering solutions. He focuses on empowering students and working professionals with modern, industry-relevant competencies in artificial intelligence and modern web architectures.",
       expertise: [
         "Applied Technology",
         "Skill Development",
@@ -84,7 +87,8 @@ export const siteConfig = {
       social: {
         linkedin: "#",
         twitter: "#",
-        email: "sandeep.kale@companydomain.com"
+        email: "sandeep.kale@aitech.in",
+        phone: "+91 90494 73739"
       }
     }
   ],

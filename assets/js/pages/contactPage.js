@@ -31,17 +31,26 @@ export function renderContactPage() {
                 Our team is available Monday through Saturday to answer questions from students, parents, and enterprise clients.
               </p>
 
-              <!-- Phone -->
+              <!-- Phone & Direct Helplines -->
               <div class="flex items-start gap-4 p-5 rounded-2xl bg-white/[0.03] border border-white/10 group hover:border-blue-500/40 transition-colors">
                 <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-cyan-400 flex items-center justify-center shrink-0">
                   ${icons.phone}
                 </div>
-                <div>
-                  <div class="text-xs font-mono uppercase tracking-wider text-slate-400">Phone & Helpline</div>
-                  <a href="tel:${siteConfig.contact.phone.replace(/[^0-9+]/g, '')}" class="text-white font-mono font-semibold text-base hover:text-cyan-400 transition-colors block mt-0.5">
-                    ${siteConfig.contact.phone}
-                  </a>
-                  <div class="text-xs text-slate-500 font-mono mt-0.5">Mon - Sat: 9 AM - 7 PM IST</div>
+                <div class="space-y-2">
+                  <div class="text-xs font-mono uppercase tracking-wider text-slate-400">Direct Helplines</div>
+                  <div>
+                    <div class="text-[11px] text-cyan-400 font-mono font-medium">Dr. Sandeep Kale:</div>
+                    <a href="tel:9049473739" class="text-white font-mono font-semibold text-base hover:text-cyan-400 transition-colors block">
+                      +91 90494 73739
+                    </a>
+                  </div>
+                  <div>
+                    <div class="text-[11px] text-purple-400 font-mono font-medium">Dr. Pravin Kale:</div>
+                    <a href="tel:9607504226" class="text-white font-mono font-semibold text-base hover:text-purple-400 transition-colors block">
+                      +91 96075 04226
+                    </a>
+                  </div>
+                  <div class="text-xs text-slate-500 font-mono pt-0.5">Mon - Sat: 9 AM - 7 PM IST</div>
                 </div>
               </div>
 
@@ -50,13 +59,20 @@ export function renderContactPage() {
                 <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center shrink-0">
                   ${icons.whatsapp}
                 </div>
-                <div>
+                <div class="space-y-2">
                   <div class="text-xs font-mono uppercase tracking-wider text-slate-400">WhatsApp Instant Connect</div>
-                  <a href="https://wa.me/${siteConfig.contact.whatsapp.replace(/[^0-9]/g, '')}?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20your%20IT%20courses%20and%20solutions." 
-                     target="_blank" rel="noopener noreferrer" 
-                     class="text-white font-mono font-semibold text-base hover:text-emerald-400 transition-colors block mt-0.5">
-                    ${siteConfig.contact.whatsapp}
-                  </a>
+                  <div>
+                    <a href="https://wa.me/919049473739?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20your%20IT%20courses%20and%20solutions." 
+                       target="_blank" rel="noopener noreferrer" 
+                       class="text-white font-mono font-semibold text-sm sm:text-base hover:text-emerald-400 transition-colors block">
+                      +91 90494 73739 <span class="text-xs text-slate-400 font-normal">(Dr. Sandeep Kale)</span>
+                    </a>
+                    <a href="https://wa.me/919607504226?text=Hello!%20I%20would%20like%20to%20know%20more%20about%20your%20IT%20courses%20and%20solutions." 
+                       target="_blank" rel="noopener noreferrer" 
+                       class="text-white font-mono font-semibold text-sm sm:text-base hover:text-emerald-400 transition-colors block mt-1.5">
+                      +91 96075 04226 <span class="text-xs text-slate-400 font-normal">(Dr. Pravin Kale)</span>
+                    </a>
+                  </div>
                   <div class="text-xs text-emerald-400/80 font-mono mt-0.5 flex items-center gap-1">
                     <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
                     <span>Quick response for admissions</span>

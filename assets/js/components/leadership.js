@@ -119,6 +119,17 @@ export function renderLeadershipSection() {
                   </div>
                 </div>
 
+                <!-- Direct Phone Contact Badge -->
+                <div class="mb-6 p-3.5 rounded-2xl bg-white/[0.03] border border-white/10 flex items-center justify-between text-xs">
+                  <span class="text-slate-400 font-mono text-[11px] flex items-center gap-1.5">
+                    <span class="text-cyan-400">${icons.phone}</span>
+                    <span>Direct Helpline:</span>
+                  </span>
+                  <a href="tel:${founder.phone.replace(/[^0-9]/g, '')}" class="text-cyan-400 hover:text-cyan-300 font-mono font-bold tracking-wider hover:underline">
+                    ${founder.phone}
+                  </a>
+                </div>
+
               </div>
 
               <!-- Footer with Direct Action -->
