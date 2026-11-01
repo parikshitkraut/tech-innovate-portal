@@ -66,9 +66,14 @@ export function renderFooter() {
                   <span class="font-bold text-lg font-mono bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">AI</span>
                 </div>
               </div>
-              <span class="font-heading font-bold text-xl tracking-tight text-white">
-                ${siteConfig.companyName}
-              </span>
+              <div class="flex flex-col">
+                <span class="font-heading font-bold text-xl tracking-tight text-white">
+                  ${siteConfig.companyName}
+                </span>
+                <span class="text-[10px] tracking-wider font-mono uppercase text-cyan-400">
+                  ${siteConfig.tagline}
+                </span>
+              </div>
             </a>
 
             <p class="text-slate-400 text-sm leading-relaxed max-w-sm">

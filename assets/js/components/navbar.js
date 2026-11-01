@@ -27,8 +27,8 @@ export function renderNavbar(activePage = 'home') {
               <span class="font-heading font-bold text-lg tracking-tight text-white group-hover:text-cyan-400 transition-colors">
                 ${siteConfig.companyName}
               </span>
-              <span class="text-[9px] tracking-wider font-mono uppercase text-slate-400">
-                Brings Every Solution
+              <span class="text-[8px] sm:text-[9px] tracking-wider font-mono uppercase text-slate-400 whitespace-nowrap">
+                ${siteConfig.tagline}
               </span>
             </div>
           </a>
